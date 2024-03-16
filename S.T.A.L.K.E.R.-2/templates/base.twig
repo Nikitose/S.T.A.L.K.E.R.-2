@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="shortcut icon" href="images/accueil/icone.jpg" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<title>{{ titre }}</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="{{ style }}">
+</head>
+
+<body>
+
+	<div class="wrap">
+		<!--HEADER-->
+		<header role="baniere">
+			<!--BANIERE-->
+			<div class="img"></div>
+			<h1 class="hero glitch layers" data-text="S.T.A.L.K.E.R. 2"><span>S.T.A.L.K.E.R. 2</span></h1>
+		</header>
+
+		<!--MAIN-->
+		<div class="contener-z-2">
+			<main role="contenue">
+				<!--NAV_BARRE-->
+				<div class="nav-barre">
+					<nav class="nav-categorie">
+						<ul>
+							{% if lang == 'fr' %}
+							<li><a href="accueil-fr.php"><i class="fa-solid fa-house"></i></a></li>
+							{% else %}
+							<li><a href="accueil-en.php"><i class="fa-solid fa-house"></i></a></li>
+							{% endif %}	
+							{% if lang == 'fr' %}
+									<li><a href="personnages-fr.php">Personnages</a></li>
+									<li><a href="anomalies-fr.php">Anomalies</a></li>
+									<li><a href="mutants-fr.php">Mutants</a></li>
+							{% else %}
+									<li><a href="personnages-en.php">Characters</a></li>
+									<li><a href="anomalies-en.php">Anomalies</a></li>
+									<li><a href="mutants-en.php">Mutants</a></li>
+							{% endif %}
+						</ul>
+					</nav>
+					<nav class="nav-plus">
+						<ul>
+							{% if lang == 'fr' %}
+							<li><a href="a-propos-fr.php">à Propos</a></li>
+							<li><a href="contact-fr.php">Contact</a></li>
+							{% else %}
+							<li><a href="a-propos-en.php">About</a></li>
+							<li><a href="contact-en.php">Contact</a></li>
+							{% endif %}
+							{% block sub_nav %}
+					
+							{% endblock %}
+						</ul>
+					</nav>
+				</div>
+				{% block main %}
+					
+				{% endblock %}
+			</main>
+
+			<!--FOOTER-->
+			<footer role="footer">
+				<div class="box">
+					<div class="box-2">
+						<div class="trait-footer"></div>
+						<ul>
+							<li><a href="https://www.youtube.com/watch?v=SjDMwsbaSd8"><i class="fa-brands fa-youtube"></i>Gameplay Trailer</a></li>
+							<li><a href="https://www.youtube.com/watch?v=qghGAyyD8Pk"><i class="fa-brands fa-youtube"></i>History Trailer</a></li>
+							<li><a href="https://www.youtube.com/watch?v=BB87nZ2Wldg"><i class="fa-brands fa-youtube"></i>Trailer Additionel</a></li>
+						</ul>
+					</div>
+					<div class="box-2">
+						<div class="trait-footer"></div>
+						<ul>
+							<li><a href="https://store.steampowered.com/app/4500/STALKER_Shadow_of_Chernobyl/?l=french"><i class="fa-solid fa-gamepad"></i>S.T.A.L.K.E.R. - Shadow of Chernobyl</a></li>
+							<li><a href="https://store.steampowered.com/app/20510/STALKER_Clear_Sky/"><i class="fa-solid fa-gamepad"></i>S.T.A.L.K.E.R. - Clear Sky</a></li>
+							<li><a href="https://store.steampowered.com/app/41700/STALKER_Call_of_Pripyat/"><i class="fa-solid fa-gamepad"></i>S.T.A.L.K.E.R. - Call of Pripyat</a></li>
+						</ul>
+					</div>
+				</div>
+				<p class="from">© 2024 | Développement : KUZNETSOV Nikita</p>
+			</footer>
+		</div>
+	</div>
+</body>
+<script src="js/apparition-aside.js"></script>
+
+</html>
