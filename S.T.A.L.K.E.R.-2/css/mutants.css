@@ -1,0 +1,70 @@
+/*******************MAIN-MUTANTS*******************/
+
+/***ARTICLES***/
+
+article {
+    background: url(../images/personnages/fond-article-perso.png) no-repeat;
+    background-size: cover;
+    width: 700px;
+    margin-left: 27px;
+}
+
+/***TITRE***/
+
+h3 {
+    font-size: 30pt;
+    margin: 20px 0px 4px 0px;
+}
+
+/***IMG***/
+
+.img-mut {
+    width: 430px;
+}
+
+/***LOGO***/
+
+.box-2:nth-child(2) {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mutants .box-2:nth-child(2) p {
+    margin: 0px 0px 6px 0px;
+}
+
+.mutants .box-2:nth-child(2) p:nth-child(3) {
+    margin-top: 30px;
+}
+
+.mutants .box-2:nth-child(2) p:nth-child(1), .mutants .box-2:nth-child(2) p:nth-child(3){
+    font-size: 20pt;
+    margin-bottom: 7px;
+    color: rgb(238, 237, 229);
+}
+
+.fa-clover {
+    color: green;
+    font-size: 18pt;
+}
+
+.fa-skull {
+    color: rgb(255, 255, 255);
+    font-size: 18pt;
+}
+
+.gris {
+    color: rgb(101, 101, 101);
+}
+
+/***DESCRITION***/
+
+.description {
+    color: rgb(205, 156, 21);
+    font-size: 14pt;
+    padding-bottom: 15px;
+    text-align: justify;
+}

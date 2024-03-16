@@ -1,0 +1,86 @@
+/*******************MAIN-ANOMALIS*******************/
+
+/*****BASE*****/
+
+article {
+    background: url(../images/anomalies/fond-article-ano.png) no-repeat 90% 0%;
+    background-size: contain;
+    width: 600px;
+}
+
+article:nth-child(2n+1)  {
+    margin-left: 15px;
+}
+
+article:nth-child(2n+2)  {
+    margin-left: 135px;
+}
+
+/***TITRE***/
+
+.anomalie h3 {
+    font-size: 27pt;
+    text-align: center;
+    margin: 0px;
+    padding: 20px 0px 15px 0px;
+}
+
+/***IMAGE***/
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.img-ano {
+    width: 500px;
+    border: 3px dashed #2d2923;
+    border-radius: 3px;
+}
+
+/***HOVER***/
+
+.img-ano:hover {
+    animation: apparition-border 0.2s linear forwards ;
+}
+  
+@keyframes apparition-border {
+    to{
+        border: 3px dashed rgb(161, 121, 28);
+    }
+}
+
+/***p***/
+
+.anomalie .box-2:nth-child(1) p {
+    list-style: square;
+    color: rgb(205, 156, 21);
+    margin-left: 17px;
+    font-size: 13pt;
+    margin-top: 0px;
+}
+
+.anomalie .box-2:nth-child(2) p {
+    text-align: center;
+    font-size: 17pt;
+    color: rgb(238, 237, 229);
+}
+
+/***LOGO***/
+
+.fa-skull {
+    color: rgb(255, 255, 255);
+    font-size: 14pt;
+    margin: 0px;
+}
+
+.fa-clover {
+    color: green;
+    font-size: 14pt;
+}
+
+.gris {
+    color: rgb(101, 101, 101);
+}
+
+
