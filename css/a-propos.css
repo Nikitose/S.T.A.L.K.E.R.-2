@@ -1,0 +1,45 @@
+/*******************MAIN-A-PROPOS*******************/
+
+.a-propos {
+    background: linear-gradient(to bottom, #2a1d02, #120e00);
+    padding-top: 36px;
+    padding-bottom: 35px;
+}
+
+h2, h3, p {
+    margin: 0px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 25pt;
+}
+
+h3 {
+    margin-top: 5px;
+    font-size: 25pt;
+    font-family: 'STALKER1', sans-serif;
+}
+
+.a-propos .centre img {
+    margin-top: 10px;
+    width: 400px;
+
+}
+
+.centre {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+p {
+    width: 420px;
+    margin-top: 20px;
+    margin-left: 22px;
+    margin-right: 17px;
+    color: rgb(205, 156, 21);
+    font-size: 17pt;
+    text-align: justify;
+}
+
